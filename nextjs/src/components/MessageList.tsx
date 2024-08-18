@@ -2,14 +2,13 @@
 'use client';
 
 import { useSoketiClient } from '@/context/soketiClient';
-import { getPusherClient } from '@/pusher/client';
 import { useEffect, useState } from 'react';
 
 interface MessageListProps {}
 
 export default function MessageList({}: MessageListProps) {
   console.log('rendered');
-  const soketiClient  = getPusherClient
+  const soketiClient  = useSoketiClient()
 
   const [messages, setMessages] = useState<
     {
