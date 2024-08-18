@@ -1,0 +1,10 @@
+{
+  "debug": true,
+  "port": 6002,
+  "appManager.array.apps": [
+    {
+      "enabled": true,
+      "enableClientMessages": true
+    }
+  ]
+}
