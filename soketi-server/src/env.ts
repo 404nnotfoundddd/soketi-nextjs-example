@@ -4,8 +4,8 @@ import { z } from 'zod'
 export const env = createEnv({
   server: {
     SOKETI_DEBUG: z.literal('1').or(z.literal('0')).default('0'),
-    SOKETI_DEFAULT_APP_ID: z.string().cuid2(),
-    SOKETI_DEFAULT_APP_KEY: z.string().cuid2(),
+    SOKETI_DEFAULT_APP_ID: z.string(),
+    SOKETI_DEFAULT_APP_KEY: z.string(),
     SOKETI_DEFAULT_APP_SECRET: z.string(),
     SOKETI_DEFAULT_APP_MAX_CONNS: z.string(),
     SOKETI_DEFAULT_APP_USER_AUTHENTICATION: z
